@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <link rel="stylesheet" href="js/jquery-ui.css">
+
+    <style>
+        body {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com jQuery</h1>
+    <main>
+        <section id="painel">
+            <h2>Front-End</h2>
+            <section>
+                <h3>HTML 5, CSS3, JavaScript e jQuery</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta deserunt, dolores, sequi labore earum ut molestias asperiores nisi assumenda illum omnis debitis similique facere, necessitatibus repellendus quo consectetur nobis laudantium!
+            </section>
+
+            <h2>Back-End</h2>
+            <section>
+                <h3>MySQL, MongoDB, PHP,</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta deserunt, dolores, sequi labore earum ut molestias asperiores nisi assumenda illum omnis debitis similique facere, necessitatibus repellendus quo consectetur nobis laudantium!
+            </section>
+
+            <h2>Design</h2>
+            <section>
+                <h3>PhotoShop</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta deserunt, dolores, sequi labore earum ut molestias asperiores nisi assumenda illum omnis debitis similique facere, necessitatibus repellendus quo consectetur nobis laudantium!
+            </section>
+
+
+        </section>
+    </main>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+        // Função para ativar o Acordeon.
+        $(document).ready(() => {
+            $("#painel").accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: 'content' 
+            })
+        })
+    </script>
+</body>
+</html>
